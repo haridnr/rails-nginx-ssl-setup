@@ -2,6 +2,6 @@
 
 Basic Rails Application created using 
 
-``` rails new sampleapp ```
+``` $ rails new sampleapp ```
 
 to setup rails with Nginx.
