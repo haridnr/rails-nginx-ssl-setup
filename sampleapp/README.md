@@ -1,4 +1,5 @@
-== README
+README
+======
 
 Basic Rails Application created using 
 
