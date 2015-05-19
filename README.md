@@ -41,6 +41,7 @@ upstream web-cluster {
 ```
 There are other types of load balancing techniques other than ``` ip_hash ```.
 Refer to this [article](http://nginx.org/en/docs/http/load_balancing.html) for more information.
+
 3. Restart your nginx server
 ```
 $ sudo service nginx restart
