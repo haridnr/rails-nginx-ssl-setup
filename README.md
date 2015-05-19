@@ -5,7 +5,9 @@ Nginx Passenger for Load Balancing 2 rails servers using a self signed SSL certi
 
 Setup
 -----
+
 **Start Rails Servers **
+
 Start 2 instances of the rails application using the following commands - 
 
 ```
