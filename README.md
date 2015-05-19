@@ -16,7 +16,7 @@ $ rails server          // Start server on port 3000
 $ rails s -p 3001 -P tmp/pids/server2.pid // Start server on port 3001 
 
 ```
-**Create a self signed certificat**
+**Create a self signed certificate**
 
 Create a self signed certificate using a common-name such as "ruby-trail.com". 
 ```
@@ -29,6 +29,7 @@ This will create 2 files the nginx.key and nginx.crt file.
 Make sure that you have setup Nginx with passenger. Installation details are provided [here](http://ershadk.com/blog/2012/04/05/set-up-rails-3-2-2-with-passenger-rvm-and-ngnix/)
 
 Copy the [nginx.conf](https://github.com/haridnr/rails-nginx-ssl-setup/blob/master/nginx-setup/nginx.conf) file and make the following changes
+
 1. Replace {username} and {path to ruby project} variables in the nginx.conf file as per your system
 2. The load balancing setup is done using the upstream block
 ```
@@ -40,6 +41,7 @@ upstream web-cluster {
 ```
 There are other types of load balancing techniques other than ``` ip_hash ```.
 Refer to this [article](http://nginx.org/en/docs/http/load_balancing.html) for more information.
+
 3. Restart your nginx server
 ```
 $ sudo service nginx restart
