@@ -30,8 +30,8 @@ Make sure that you have setup Nginx with passenger. Installation details are pro
 
 Copy the [nginx.conf](https://github.com/haridnr/rails-nginx-ssl-setup/blob/master/nginx-setup/nginx.conf) file and make the following changes
 
-1. Replace {username} and {path to ruby project} variables in the nginx.conf file as per your system
-2. The load balancing setup is done using the upstream block
+* Replace {username} and {path to ruby project} variables in the nginx.conf file as per your system
+* The load balancing setup is done using the upstream block
 ```
 upstream web-cluster {
         ip_hash;
@@ -42,7 +42,7 @@ upstream web-cluster {
 There are other types of load balancing techniques other than ``` ip_hash ```.
 Refer to this [article](http://nginx.org/en/docs/http/load_balancing.html) for more information.
 
-3. Restart your nginx server
+* Restart your nginx server
 ```
 $ sudo service nginx restart
 ```
